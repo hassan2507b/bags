@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  <title>Feedback Page</title>
+  <style>
+    body {font-family: Arial; background: #f5f5f5; margin: 0; padding: 0;}
+    .container {max-width: 600px; margin: 40px auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc;}
+    h2 {text-align: center;}
+    label {display: block; margin-top: 10px;}
+    input, textarea, select {width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px;}
+    button { background: #b7a36f; color: white; border: none; padding: 10px 15px; margin-top: 10px; border-radius: 5px; cursor: pointer;}
+    button:hover {background:  #b7a36f;}
+    .navbar{padding:15px 60px;background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+    .navbar-brand{font-size:26px;font-weight:700;letter-spacing:2px;color:#000}
+    .navbar-nav .nav-link{font-size:14px;color:#000;font-weight:500;letter-spacing:1px;margin-right:20px;transition:.3s}
+    .navbar-nav .nav-link:hover{color:#c7b783}
+    .nav-icons i{cursor:pointer;margin-left:15px;font-size:18px;color:#000;transition:.3s}
+    .nav-icons i:hover{color:#c7b783}
+  </style>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="#">Nextag</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Sale</a></li>
+        <li class="nav-item"><a class="nav-link" href="feed.html">Feedback</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-icons d-flex">
+        <i class="fas fa-user"></i>
+        <i class="fas fa-search"></i>
+        <i class="fas fa-shopping-bag"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h2>Give Your Feedback</h2>
+    <form action="#" method="post">
+      <label>Your Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Email Address:</label>
+      <input type="email" name="email">
+
+      <label>Rate Our Website:</label>
+      <select name="rating">
+        <option>Excellent</option>
+        <option>Good</option>
+        <option>Average</option>
+        <option>Poor</option>
+      </select>
+
+      <label>Your Feedback:</label>
+      <textarea name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+   
+</body>
+</html>
